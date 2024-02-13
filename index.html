@@ -4,42 +4,45 @@
 <head>
     <title>Owen Dray - Mechanical Engineer</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> <!-- For social media icons -->
 </head>
 <body>
-    <header>
-        <h1>Owen Dray</h1>
-        <p>Mechanical Engineer</p>
-    </header>
+    <div class="header-slate-grey"> <!-- Container for the slate grey background -->
+        <header>
+            <div class="header-content">
+                <h1>Owen Dray</h1>
+                <p>Mechanical Engineer</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)">Projects</a>
+                        <div class="dropdown-content">
+                            <a href="project1.html">Project 1</a>
+                            <a href="project2.html">Project 2</a>
+                            <!-- More projects can be added here -->
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
 
     <section id="about">
-        <div class="about-content">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>Hello, I’m Owen! I am a graduate of Olin College of Engineering with a degree in Mechanical Engineering. I am passionate about space, renewable energy, and 3D printing and am currently working in manufacturing. As the Mechanical Lead of the Olin Electric Formula SAE team, I guide my peers to create reliable, unique, and testable designs.</p>
-                <p>My creative passion is pottery, specifically wheel throwing. I find the process of creating shapes on the wheel meditative and a welcome break from the world of engineering.</p>
-                <p>I’m also interested in cooking; you can often find me with my nose buried in the latest America’s Test Kitchen Recipes or watching Binging with Babish. My favorite creation will always be croissants because of the effort and technique required to make them.</p>
-            </div>
-            <div class="about-image">
-                <img src="owen_dray_photo.jpg" alt="Owen Dray">
-            </div>
+        <div class="about-container">
+            <h2>About Me <a href="https://www.linkedin.com/in/owendray"><i class="fab fa-linkedin"></i></a></h2>
+            <p>Hello, I’m Owen! I am a graduate of Olin College of Engineering with a degree in Mechanical Engineering. I am passionate about space, renewable energy, and 3D printing and am currently working in manufacturing. As the Mechanical Lead of the Olin Electric Formula SAE team, I guide my peers to create reliable, unique, and testable designs.</p>
+            <p>My creative passion is pottery, specifically wheel throwing. I find the process of creating shapes on the wheel meditative and a welcome break from the world of engineering.</p>
+            <p>I’m also interested in cooking; you can often find me with my nose buried in the latest America’s Test Kitchen Recipes or watching Binging with Babish. My favorite creation will always be croissants because of the effort and technique required to make them.</p>
+            <button onclick="location.href='Owen_Dray_Resume.pdf'" type="button" class="resume-button">Download My Full Resume</button>
         </div>
     </section>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <ul>
-            <li><a href="project1.html">Project 1</a></li>
-            <li><a href="project2.html">Project 2</a></li>
-            <!-- Add more projects as needed -->
-        </ul>
-    </section>
-
-    <section id="resume">
-        <a href="Owen_Dray_Resume.pdf" class="resume-button" download>Download My Resume</a>
-    </section>
+    <!-- Other sections -->
 
     <footer>
-        <p>Contact me at <a href="mailto:owendray19@gmail.com">owendray19@gmail.com</a></p>
+        <!-- Footer content -->
     </footer>
 </body>
 </html>
