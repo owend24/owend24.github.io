@@ -62,9 +62,16 @@ nav ul li a:hover {
     margin-top: -2em; /* Negative margin to pull the about section up */
 }
 
-.about-container h2 {
-    font-size: 2em;
-    margin-bottom: 0.5em;
+.about-container.two-columns {
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: auto;
+}
+
+.column {
+    flex-basis: 45%; /* Adjust the width of each column here */
+    margin-bottom: 20px; /* Spacing between the columns and the download button */
 }
 
 .resume-button {
@@ -77,6 +84,7 @@ nav ul li a:hover {
     border-radius: 5px;
     text-transform: uppercase;
     font-weight: bold;
+    margin-top: 20px;
 }
 
 .resume-button:hover {
