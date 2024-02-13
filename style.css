@@ -4,11 +4,12 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    background-color: white; /* White background */
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: #333; /* Grey background */
+    color: white; /* White text */
     padding: 10px 0;
     text-align: center;
 }
@@ -24,17 +25,27 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: white; /* White text */
     text-decoration: none;
 }
 
 footer {
     text-align: center;
     padding: 20px 0;
-    background: #333;
-    color: #fff;
+    background: #333; /* Grey background */
+    color: white; /* White text */
 }
 
 section {
     padding: 20px;
+    color: #333; /* Grey text */
+}
+
+/* Additional styles for blue color accents */
+a:hover, a:focus {
+    color: #007bff; /* Blue color for links on hover/focus */
+}
+
+h1, h2 {
+    color: #007bff; /* Blue color for headings */
 }
